@@ -1,21 +1,16 @@
 'use strict';
 
 {
-    const item = 'Компьютерный стол';
-    const count = 5;
-    const category = 'Офисная мебель';
-    const price = 4792;
+    const item = prompt('Введите наименование товара:', 'Компьютерный стол');
+    let count = prompt('Введите количество товара:', '5');
+    const category = prompt('Введите категорию товара:', 'Офисная мебель');
+    let price = prompt('Введите цену товара:', '4500');
 
-    console.log(item);
-    console.log('Общая сумма товара: ', count * price, 'руб.');
-}
+    console.log('Тип данных параметра "количество товара":', typeof count);
+    console.log('Тип данных параметра "цена товара":', typeof price);
 
-{
-    const item = 'Тетрадь';
-    const count = 8;
-    const category = 'Канцелярские товары';
-    const price = 79;
+    +count;
+    +price;
 
-    console.log(item);
-    console.log('Общая сумма товара: ', count * price, 'руб.');
+    console.log(`Вы заказали ${count} шт товара "${item}" на общую сумму ${count * price} руб.`);
 }
