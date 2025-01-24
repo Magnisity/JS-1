@@ -13,7 +13,7 @@
         count = Number(count);  //почему в этих двух строках перевод в число с помощью "+" (+count, +price) не работает?
         price = Number(price);
 
-        if (count > 0 && price > 0 && Number.isInteger(count) && Number.isFinite(count) && Number.isFinite(price)) {
+        if (count > 0 && price > 0 && Number.isFinite(count) && Number.isFinite(price)) {
             console.log(`Вы заказали ${count} шт товара "${item}" на общую сумму ${count * price} руб.`);
         } else {
             console.log('Вы ввели некорректные данные');
