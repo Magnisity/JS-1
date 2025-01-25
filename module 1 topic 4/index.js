@@ -10,7 +10,7 @@
     if (count === null || price === null) {
         console.log('Для подсчета необходимо ввести количество и цену товара.');
     } else {
-        count = Number(count);  //почему в этих двух строках перевод в число с помощью "+" (+count, +price) не работает?
+        count = Number(count); 
         price = Number(price);
 
         if (count > 0 && price > 0 && Number.isFinite(count) && Number.isFinite(price)) {
